@@ -160,7 +160,9 @@ export default {
     getHomeGoods(type) {
       getHomeGoods(type, this.goods[type].page + 1).then(res => {
         //把获取到的数据全部添加到数组中
+  
         this.goods[type].list.push(...res.data.list);
+        // console.log(this.goods[type].list)
         this.goods[type].page++;
       });
     }
