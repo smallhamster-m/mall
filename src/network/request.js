@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from 'axios' 
 
 export function request(config) {
   // 插件axios实例对象
